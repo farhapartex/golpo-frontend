@@ -5,6 +5,8 @@ import { Login, Registration } from "../component/auth";
 
 const UserAuth = () =>{
     const [isShowLoginBlock, setIsShowLoginBlock] = useState(true);
+
+
     return (
         <div className="w-100">
             <Container fluid>
