@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f2f2f2;
+  background: #f8f8f8;
 }
 
 code {
@@ -29,9 +29,67 @@ code {
   width: 90%;
 }
 
+.baseTextColor{
+  color: #ff5722;
+}
+
+.baseAnchor{
+  text-decoration: none;
+  color: #ff5722;
+}
+
+.baseAnchor:hover{
+  text-decoration: none;
+  color: #ff5722;
+}
+
+
+.baseBackgroundColor{
+  background: #ff5722 !important;
+}
+
+.baseButton{
+  background-color: #fa734a !important;
+  border-color: #ff5722 !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: none !important;
+  box-shadow: none;
+  outline: 0 none !important;
+}
+
+
+/* Login CSS */
+
 #loginLeftSide{
   background: url("./static/images/loginSide.jpg") no-repeat center center;
   background-size: cover;
   background-position: left top;
   height: 100vh;
+}
+
+#loginBaseBlock{
+  background: #d9d9d9;
+  margin-top: 14rem;
 }
