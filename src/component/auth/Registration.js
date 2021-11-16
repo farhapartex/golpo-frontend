@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Proptypes from "prop-types";
 import { Button } from "react-bootstrap";
 import TextGroupField from "../common/textGroupField";
@@ -6,6 +6,11 @@ import TextGroupField from "../common/textGroupField";
 
 const Registration = (props) =>{
     const {setIsShowLoginBlock, } = props;
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
 
     return (
         <div className="w-100">
@@ -13,9 +18,9 @@ const Registration = (props) =>{
                 <h4>Welcome to Circle</h4>
             </div>
             <div id="loginFormBlock" className="mt-5">
-                <TextGroupField label="Full Name" placeholder="Type your name"/>
-                <TextGroupField label="Email" placeholder="Type your valid email"/>
-                <TextGroupField label="Password" type="password" placeholder="Type your password"/>
+                <TextGroupField label="Full Name" value={fullName} handleChange={setFullName} placeholder="Type your name"/>
+                <TextGroupField label="Email" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
+                <TextGroupField label="Password (8 digit minimum)" type="password" value={password} handleChange={setPassword} placeholder="Type your password"/>
                 <Button variant="info" className="w-100 mt-3 baseButton">Click to Join</Button>
             </div>
 
