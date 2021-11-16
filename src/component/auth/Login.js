@@ -3,6 +3,7 @@ import Proptypes from "prop-types";
 import { Button, } from "react-bootstrap";
 import TextGroupField from "../common/textGroupField";
 import { Banner } from "../banner";
+import { isFormValidation } from "../../common/methods";
 
 
 const Login = (props) =>{
@@ -15,31 +16,13 @@ const Login = (props) =>{
     const [errorBannerMessage, setErrorBannerMessage] = useState("");
     const [successBannerMessage, setSuccessBannerMessage] = useState("");
 
-    const validateEmail = (email) =>{
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-
-    const validation = ()=> {
-        let errorList = [];
-
-        if(!email || email.length === 0){
-            errorList.push("Email is missing");
-        }
-
-        if(email && !validateEmail(email)){
-            errorList.push("Email is not valid");
-        }
-
-        if(!password || password.length === 0){
-            errorList.push("Password is missing");
-        }
-
-        return errorList.join(", ");
-    }
-
     const handleLogin = ()=> {
-        const validationRes = validation();
+        const formObj = {
+            Email:  email,
+            Password: password,
+        }
+
+        const validationRes = isFormValidation(formObj);
 
         if(validationRes && validationRes.length > 0){
             setIsShowSuccessBanner(false);

@@ -12,6 +12,10 @@ const Registration = (props) =>{
     const [password, setPassword] = useState("");
     const [termCondition, setTermCondition] = useState(false);
 
+    const handleRegistration = ()=> {
+        console.log(termCondition);
+    }
+
 
 
     return (
@@ -23,8 +27,8 @@ const Registration = (props) =>{
                 <TextGroupField label="Full Name" id="fullName" value={fullName} handleChange={setFullName} placeholder="Type your name"/>
                 <TextGroupField label="Email" id="email" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
                 <TextGroupField label="Password (8 digit minimum)" type="password" value={password} handleChange={setPassword} placeholder="Type your password"/>
-                <CheckBox label="Accept terms & conditions" name="termCondition" value={termCondition} handleChange={setTermCondition}/>
-                <Button variant="info" className="w-100 mt-3 baseButton">Click to Join</Button>
+                <CheckBox id="termsConditions" label="Accept terms & conditions" name="termCondition" value={termCondition} handleChange={setTermCondition}/>
+                <Button variant="info" className="w-100 mt-3 baseButton" onClick={()=> {handleRegistration()}}>Click to Join</Button>
             </div>
 
             <div className="w-100 mt-4">
