@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Proptypes from "prop-types";
 import { Button } from "react-bootstrap";
 import TextGroupField from "../common/textGroupField";
+import CheckBox from "../common/checkBox";
 
 
 const Registration = (props) =>{
@@ -9,6 +10,7 @@ const Registration = (props) =>{
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [termCondition, setTermCondition] = useState(false);
 
 
 
@@ -18,9 +20,10 @@ const Registration = (props) =>{
                 <h4>Welcome to Circle</h4>
             </div>
             <div id="loginFormBlock" className="mt-5">
-                <TextGroupField label="Full Name" value={fullName} handleChange={setFullName} placeholder="Type your name"/>
-                <TextGroupField label="Email" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
+                <TextGroupField label="Full Name" id="fullName" value={fullName} handleChange={setFullName} placeholder="Type your name"/>
+                <TextGroupField label="Email" id="email" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
                 <TextGroupField label="Password (8 digit minimum)" type="password" value={password} handleChange={setPassword} placeholder="Type your password"/>
+                <CheckBox label="Accept terms & conditions" name="termCondition" value={termCondition} handleChange={setTermCondition}/>
                 <Button variant="info" className="w-100 mt-3 baseButton">Click to Join</Button>
             </div>
 

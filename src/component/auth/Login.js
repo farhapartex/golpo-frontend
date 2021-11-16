@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Proptypes from "prop-types";
-import { Button, Alert } from "react-bootstrap";
+import { Button, } from "react-bootstrap";
 import TextGroupField from "../common/textGroupField";
 import { Banner } from "../banner";
 
@@ -31,7 +31,7 @@ const Login = (props) =>{
             errorList.push("Email is not valid");
         }
 
-        if(!password || password.length == 0){
+        if(!password || password.length === 0){
             errorList.push("Password is missing");
         }
 
