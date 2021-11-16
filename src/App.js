@@ -1,10 +1,10 @@
 import './App.css';
-import { Alert } from 'react-bootstrap';
+import UserAuth from './pages/UserAuth';
 
 function App() {
   return (
     <div className="App">
-      <Alert variant="secondary">Amader Golpo is under construction</Alert>
+      <UserAuth />
     </div>
   );
 }
