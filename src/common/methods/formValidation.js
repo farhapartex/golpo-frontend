@@ -13,6 +13,10 @@ export const isFormValidation = (formObj)=> {
         if(value && key === "Email" && !isValidateEmail(formObj[key])){
             errorList.push("Email is not valid");
         }
+
+        if(value && key === "Password" && formObj[key].length < 8){
+            errorList.push("Password should be 8 character or more");
+        }
     })
 
     return errorList.join(", ");

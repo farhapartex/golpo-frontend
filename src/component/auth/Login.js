@@ -62,8 +62,8 @@ const Login = (props) =>{
             </div>
 
             <div id="loginFormBlock" className="mt-5">
-                <TextGroupField label="Email" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
-                <TextGroupField label="Password" type="password" handleChange={setPassword} value={password} placeholder="Type your password"/>
+                <TextGroupField label="Email" id="luEmail" value={email} handleChange={setEmail} placeholder="Type your valid email"/>
+                <TextGroupField label="Password" id="luPassword" type="password" handleChange={setPassword} value={password} placeholder="Type your password"/>
                 <Button variant="info" className="w-100 mt-3 baseButton" onClick={()=>{handleLogin()}}>Login</Button>
             </div>
 
