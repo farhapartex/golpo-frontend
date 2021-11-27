@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+.w-65{
+  width: 65%;
+}
+
 .w-80{
   width: 80%;
 }
@@ -93,6 +97,27 @@ input[type="color"]:focus,
 #loginBaseBlock{
   background: #d9d9d9;
   margin-top: 14rem;
+}
+
+
+/* Profile CSS */
+
+#avatar img{
+  background-size: cover;
+  width: 210px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.activity-list{
+  list-style: none;
+  padding: 0px;
+}
+
+.activity-list li{
+  margin-bottom: 17px;
 }
 
 @media screen and (max-width: 575px) {
