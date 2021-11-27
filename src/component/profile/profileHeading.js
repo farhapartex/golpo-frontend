@@ -9,7 +9,7 @@ const ProfileHead = ()=> {
             <Container fluid>
                 <div className="row">
                     <div className="col-3" id="avatar">
-                        <img src={avatar}/>
+                        <img src={avatar} alt="Avatar"/>
                     </div>
                     <div className="col-9">
                         <div className="w-75 mt-4 p-3">

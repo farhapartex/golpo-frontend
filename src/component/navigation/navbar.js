@@ -22,7 +22,7 @@ const NavigationBar = ()=> {
             </Nav>
             <Nav>
                 <Nav.Link href="/profile">Profile</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
+                <Nav.Link eventKey={2} href="/auth">
                     <span className="text-danger">Logout</span>
                 </Nav.Link>
             </Nav>
