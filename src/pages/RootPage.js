@@ -1,12 +1,16 @@
 import React from "react";
+import {Routes, Route,} from "react-router-dom";
 import { NavigationBar } from "../component/navigation";
-
+import { HomePage, ProfilePage } from ".";
 
 const RootPage = ()=> {
     return (
         <div id="rootPage">
             <NavigationBar />
-            <h3>Root Page</h3>
+            <Routes>
+                <Route exact path="/" element={<HomePage />}/>
+                <Route exact path="/profile" element={<ProfilePage />}/>
+            </Routes>
         </div>
     )
 }

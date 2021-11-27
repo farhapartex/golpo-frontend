@@ -6,10 +6,10 @@ const NavigationBar = ()=> {
     return (
         <Navbar bg="light" expand="lg">
         <Container fluid>
-            <Navbar.Brand href="#home"><b>Circle</b></Navbar.Brand>
+            <Navbar.Brand href="#home"><b className="text-primary">Circle</b></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="mx-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -19,6 +19,12 @@ const NavigationBar = ()=> {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown>
+            </Nav>
+            <Nav>
+                <Nav.Link href="/profile">Profile</Nav.Link>
+                <Nav.Link eventKey={2} href="#memes">
+                    <span className="text-danger">Logout</span>
+                </Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
