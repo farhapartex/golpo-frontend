@@ -1,4 +1,5 @@
 import React from "react";
+import { Nav, Button } from "react-bootstrap";
 import ProfileHead from "../component/profile/profileHeading";
 
 const ProfilePage = ()=> {
