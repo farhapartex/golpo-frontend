@@ -1,11 +1,12 @@
 import React from "react";
-import { Nav, Button } from "react-bootstrap";
 import ProfileHead from "../component/profile/profileHeading";
+import ProfileBody from "../component/profile/profileBody";
 
 const ProfilePage = ()=> {
     return (
         <div id="profilePage" className="w-65 mx-auto">
             <ProfileHead />
+            <ProfileBody />
         </div>
     )
 }

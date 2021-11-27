@@ -111,6 +111,15 @@ input[type="color"]:focus,
   padding: 10px;
 }
 
+.activity-list{
+  list-style: none;
+  padding: 0px;
+}
+
+.activity-list li{
+  margin-bottom: 17px;
+}
+
 @media screen and (max-width: 575px) {
   #loginLeftSide{
     display: none;
