@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+.mr-1{
+  margin-right: 1rem;
+}
+
 .w-65{
   width: 65%;
 }
@@ -114,6 +118,7 @@ input[type="color"]:focus,
 .activity-list{
   list-style: none;
   padding: 0px;
+  font-size: 15px;
 }
 
 .activity-list li{
