@@ -134,6 +134,12 @@ input[type="color"]:focus,
   margin-bottom: 17px;
 }
 
+
+/* Home Page CSS */
+.icon-space{
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 575px) {
   #loginLeftSide{
     display: none;
