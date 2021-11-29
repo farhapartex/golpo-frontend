@@ -121,6 +121,15 @@ input[type="color"]:focus,
   font-size: 15px;
 }
 
+.content{
+  font-size: 14px;
+}
+
+.post-date{
+  font-size: 13px;
+  color: #737373;
+}
+
 .activity-list li{
   margin-bottom: 17px;
 }
