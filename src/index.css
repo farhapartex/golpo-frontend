@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+.mr-1{
+  margin-right: 1rem;
+}
+
 .w-65{
   width: 65%;
 }
@@ -114,10 +118,26 @@ input[type="color"]:focus,
 .activity-list{
   list-style: none;
   padding: 0px;
+  font-size: 15px;
+}
+
+.content{
+  font-size: 14px;
+}
+
+.post-date{
+  font-size: 13px;
+  color: #737373;
 }
 
 .activity-list li{
   margin-bottom: 17px;
+}
+
+
+/* Home Page CSS */
+.icon-space{
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 575px) {

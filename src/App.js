@@ -1,7 +1,11 @@
 import React from "react";
 import {Routes, Route,} from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import './App.css';
 import { RootPage, UserAuth } from "./pages";
+
+library.add(fas);
 
 function App() {
   return (
